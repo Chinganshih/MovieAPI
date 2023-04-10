@@ -64,9 +64,9 @@ const Reviews = ({getMovieData, movie, reviews, setReviews}) => {
                 }
 
                 {
-                    reviews?.map((r) => {
+                    reviews?.map((r, i) => {
                         return(
-                            <>
+                            <React.Fragment key={i}>
                                 <Row>
                                     <Col>{r.body}</Col>
                                 </Row>
@@ -75,7 +75,7 @@ const Reviews = ({getMovieData, movie, reviews, setReviews}) => {
                                         <hr/>
                                     </Col>
                                 </Row>
-                            </>    
+                            </React.Fragment>    
 
                         )
 
