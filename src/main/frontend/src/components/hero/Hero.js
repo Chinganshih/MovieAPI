@@ -18,9 +18,9 @@ const Hero = ({movies}) => {
     <div className='movie-carousel-container'>
          <Carousel>
             {
-                movies?.map((movie) => {
+                movies?.map((movie, i) => {
                     return(
-                        <Paper>
+                        <Paper key={i}>
                             <div className='movie-card-container'>
                                 <div className='movie-card' style={{"--img":`url(${movie.backdrops[0]})`}}>
                                     <div className='movie-detail'>
@@ -39,7 +39,7 @@ const Hero = ({movies}) => {
                                             </Link>
 
                                             <div className='movie-review-button-container'>
-                                                <Button  variant = "info" onClick ={() => reviews(movie.imdbId)}>Reviews </Button>
+                                                <Button  variant = "success" onClick ={() => reviews(movie.imdbId)}>Reviews </Button>
 
                                             </div>
                                         </div>
