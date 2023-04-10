@@ -1,3 +1,4 @@
+import './Header.css';
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faVideoSlash } from '@fortawesome/free-solid-svg-icons'
@@ -24,8 +25,8 @@ const Header = () => {
                 <NavLink className="nav-link" to= "/">Home</NavLink>
                 <NavLink className="nav-link" to= "/watchList">Watch List</NavLink>
                 </Nav>
-                <Button variant= "outline-info" className="me-2">Login</Button>
-                <Button variant= "outline-info" >Register</Button>
+                <Button variant = "success" className="btn-2">Login</Button>
+                <Button variant = "success" className="btn-2">Register</Button>
             </Navbar.Collapse>
         </Container>
     </Navbar>
