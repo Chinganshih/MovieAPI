@@ -5,7 +5,7 @@
 
 .movie-poster{
     height: 300px;
-    border: 1px solid gold;
+    border: 1px solid rgba(188, 65, 161, 0.853);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -59,7 +59,7 @@
 .play-button-icon{
     padding:0px;
     margin:0px;
-    color: gold;
+    color: rgb(176, 76, 98);
     font-size: 3rem;
     transition: 0.3s;
     cursor: pointer;
