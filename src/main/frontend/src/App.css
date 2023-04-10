@@ -14,7 +14,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: black;
+  background-color: rgb(133, 111, 111);
   color: white;
-  margin-top: 10px;
+  margin-top: 0px;
 }
