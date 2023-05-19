@@ -12,21 +12,33 @@ const Header = () => {
   return (
     <Navbar ng="dark" variant="dark" expand="lg">
         <Container fluid>
-            <Navbar.Brand href='/' style={{"color":"gold"}}>
-                <FontAwesomeIcon icon={faVideoSlash}/>Anna
+            <Navbar.Brand href='/' style={{"color":"black"}}>
+                <img 
+                    src="https://sominchw.sirv.com/Images/Clothes/candy.jpg" 
+                    width="50" 
+                    height="50" 
+                    alt=""
+                   ></img> 
+                AnnaThriftShop
             </Navbar.Brand>
             <Navbar.Toggle aria-controls='navbarScroll' /> 
             <Navbar.Collapse id="navbarScroll">
-                <Nav
-                    className='me-auto my-2 my-lg-0'
+             <Nav
+                    className='me-auto'
+                    color='black'
                     style={{maxHeight: '100px'}}
                     navbarScroll
-                >
-                <NavLink className="nav-link" to= "/">Home</NavLink>
-                <NavLink className="nav-link" to= "/watchList">Watch List</NavLink>
-                </Nav>
-                <Button variant = "success" className="btn-2">Login</Button>
-                <Button variant = "success" className="btn-2">Register</Button>
+            >
+                <NavLink className="nav-link" to= "/About" style={{"color":"black"}}>About</NavLink>
+                <NavLink className="nav-link" to= "/Cloth" style={{"color":"grey"}}>Women's Cloth</NavLink>
+                <NavLink className="nav-link" to= "/MenCloth" style={{"color":"black"}}>Men's Cloth</NavLink>
+                <NavLink className="nav-link" to= "/Accessory" style={{"color":"grey"}}>Accessory</NavLink>
+                <NavLink className="nav-link" to= "/Shoes" style={{"color":"black"}}>Shoes</NavLink>
+                <NavLink className="nav-link" to= "/Other" style={{"color":"grey"}}>Other</NavLink>
+                <NavLink className="nav-link" to= "/ContactUs" style={{"color":"black"}}>Contact us</NavLink>
+            </Nav>
+                <Button >Login</Button>
+                <Button >Register</Button>
             </Navbar.Collapse>
         </Container>
     </Navbar>

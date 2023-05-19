@@ -1,3 +1,15 @@
-.btn-2{
+.btn-primary{
     margin-right: 10px;
+    background-color: #7e6027 !important;
+    border-color: #7e6027 !important;
 }
+
+.btn-primary:hover{
+    background-color: #e6c49b !important;
+    border-color: #e6c49b !important;
+    color: black !important;
+    font-weight: bolder !important; 
+}
+
+
+

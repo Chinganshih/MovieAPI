@@ -1,9 +1,9 @@
 import React from 'react'
-import Hero from '../hero/Hero'
+import Cloth from '../cloth/Cloth'
 
-const Home = ({movies}) => {
+const Home = ({clothes}) => {
   return (
-    <Hero movies = {movies}/>
+    <Cloth clothes = {clothes}/>
   )
 }
 
