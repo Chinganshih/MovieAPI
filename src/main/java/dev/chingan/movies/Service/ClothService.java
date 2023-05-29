@@ -2,8 +2,6 @@ package dev.chingan.movies.Service;
 
 import dev.chingan.movies.Entity.Cloth;
 import dev.chingan.movies.Repo.ClothRepo;
-import dev.chingan.movies.Repo.MovieRepo;
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

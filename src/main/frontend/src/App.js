@@ -16,8 +16,8 @@ function App() {
 
   const [ clothes, setClothes] = useState();
   const [ cloth, setCloth] = useState();
-  const [ movies, setMovies] = useState();
-  const [ movie, setMovie] = useState();
+  // const [ movies, setMovies] = useState();
+  // const [ movie, setMovie] = useState();
   const [ reviews, setReviews] = useState();
 
   const getClothes = async() => {
@@ -51,41 +51,41 @@ function App() {
   }
   
 
-  const getMovies = async() => {
+  // const getMovies = async() => {
     
-    try {
+  //   try {
       
-      const response = await api.get("/api/v1/movie");
+  //     const response = await api.get("/api/v1/movie");
 
-      console.log(response.data)
-      setMovies(response.data)
+  //     console.log(response.data)
+  //     setMovies(response.data)
 
-    } catch (error) {
-      console.log(error)
-    }
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
 
 
-  }
+  // }
 
-  const getMovieData = async (movieId) => {
+  // const getMovieData = async (movieId) => {
 
-    try {
+  //   try {
 
-      const response = await api.get(`/api/v1/movie/${movieId}`);
-      const singleMovie = response.data;
+  //     const response = await api.get(`/api/v1/movie/${movieId}`);
+  //     const singleMovie = response.data;
 
-      setMovie(singleMovie);
-      setReviews(singleMovie.reviewIds);
+  //     setMovie(singleMovie);
+  //     setReviews(singleMovie.reviewIds);
       
 
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
   
 
   useEffect(()=>{
-    getMovies();
+    // getMovies();
     getClothes();
   }, [])
 
