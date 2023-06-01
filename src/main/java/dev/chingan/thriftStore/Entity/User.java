@@ -1,4 +1,4 @@
-package dev.chingan.movies.Entity;
+package dev.chingan.thriftStore.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,22 +8,24 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
-@Document(collection= "clothes")
+@Document(collection= "users")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Cloth {
+public class User {
 
     @Id
     private ObjectId id;
-    private String imdbId;
-    private String title;
-    private String brand;
-    private String price;
-    private String currency;
-    private String poster;
-    private List<String> backdrops;
-    @DocumentReference
-    private List<Review> reviewIds;
+    private String email;
+    private String firstName;
+    private String lastName;
+    private String hashedPwd;
+    private ShippingAddress shippingAddress;
+    private Address address;
+    private String phone;
+    // private Collection<Role> roles;
+
+
+
 }
 

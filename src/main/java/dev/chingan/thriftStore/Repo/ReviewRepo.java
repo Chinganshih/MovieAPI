@@ -1,6 +1,6 @@
-package dev.chingan.movies.Repo;
+package dev.chingan.thriftStore.Repo;
 
-import dev.chingan.movies.Entity.Review;
+import dev.chingan.thriftStore.Entity.Review;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;

@@ -31,19 +31,6 @@ const Cloth = ({clothes}) => {
 
     ]
 
-    // const listItems = clothes?.map((cloth) => 
-    //     <div className="card" key={cloth.imbdId}>
-    //         <div className='card_img'>
-    //             <img src={cloth.poster} />
-    //         </div>
-
-    //         <div className='card_header'>
-    //             <h2 className="card_title">{cloth.title}</h2>
-    //             <p className="price">{cloth.price}<span>{cloth.currency}</span></p>
-    //             <div className='btn'>Add to cart</div>
-    //         </div>
-    //     </div>
-    // );
 
   return (
     <div className='cloth-carousel-container'>

@@ -51,41 +51,7 @@ function App() {
   }
   
 
-  // const getMovies = async() => {
-    
-  //   try {
-      
-  //     const response = await api.get("/api/v1/movie");
-
-  //     console.log(response.data)
-  //     setMovies(response.data)
-
-  //   } catch (error) {
-  //     console.log(error)
-  //   }
-
-
-  // }
-
-  // const getMovieData = async (movieId) => {
-
-  //   try {
-
-  //     const response = await api.get(`/api/v1/movie/${movieId}`);
-  //     const singleMovie = response.data;
-
-  //     setMovie(singleMovie);
-  //     setReviews(singleMovie.reviewIds);
-      
-
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // }
-  
-
   useEffect(()=>{
-    // getMovies();
     getClothes();
   }, [])
 

@@ -1,4 +1,4 @@
-package dev.chingan.movies.Controller;
+package dev.chingan.thriftStore.Controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import dev.chingan.movies.Entity.Cloth;
-import dev.chingan.movies.Service.ClothService;
+import dev.chingan.thriftStore.Entity.Cloth;
+import dev.chingan.thriftStore.Service.ClothService;
 
 @RestController
 @RequestMapping("/api/v1/cloth")

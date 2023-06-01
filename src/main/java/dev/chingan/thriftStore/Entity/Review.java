@@ -1,4 +1,4 @@
-package dev.chingan.movies.Entity;
+package dev.chingan.thriftStore.Entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

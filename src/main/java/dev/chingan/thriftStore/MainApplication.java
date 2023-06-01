@@ -1,4 +1,4 @@
-package dev.chingan.movies;
+package dev.chingan.thriftStore;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
