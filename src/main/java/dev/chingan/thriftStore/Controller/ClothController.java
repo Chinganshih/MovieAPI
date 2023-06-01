@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,5 +32,10 @@ public class ClothController {
     @GetMapping("/{imdbId}")
     public ResponseEntity<Optional<Cloth>> getSingleCloth (@PathVariable String imdbId){
         return new ResponseEntity<Optional<Cloth>>(clothService.singleCloth(imdbId), HttpStatus.OK);
+    }
+
+    @GetMapping("/category/{categoryId}")
+    public ResponseEntity<List<Cloth>> getByCategoryId(@PathVariable Integer categoryId){
+        return new ResponseEntity<List<Cloth>>(clothService.byCategoryId(categoryId), HttpStatus.OK);
     }
 }

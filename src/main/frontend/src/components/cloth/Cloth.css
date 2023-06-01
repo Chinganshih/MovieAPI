@@ -1,3 +1,9 @@
+.banner{
+   height: 60vh;
+   display: flex;
+   background-position: center;
+}
+
 
 .intro-container{
    height: 20%;

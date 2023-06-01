@@ -22,7 +22,7 @@ public class Cloth {
     private ObjectId id;
     private String imdbId;
     private String title;
-    private String category_id;
+    private int categoryId;
     private String brand;
     private String price;
     private String currency;
@@ -32,8 +32,6 @@ public class Cloth {
 
     @DocumentReference(lazy = true)
     private List<Review> reviewIds;
-    
-    
     
     
 }

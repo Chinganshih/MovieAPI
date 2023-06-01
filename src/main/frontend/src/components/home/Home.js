@@ -1,9 +1,9 @@
 import React from 'react'
-import Cloth from '../cloth/Cloth'
+import AllCloth from '../cloth/AllCloth'
 
 const Home = ({clothes}) => {
   return (
-    <Cloth clothes = {clothes}/>
+    <AllCloth clothes = {clothes}/>
   )
 }
 

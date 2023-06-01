@@ -22,4 +22,9 @@ public class ClothService {
     public Optional<Cloth> singleCloth(String imdbId) {
         return clothRepo.findByImdbId(imdbId);
     }
+
+
+    public List<Cloth> byCategoryId(Integer categoryId){
+        return clothRepo.findByCategoryId(categoryId);
+    }
 }
