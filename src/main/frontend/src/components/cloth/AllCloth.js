@@ -1,16 +1,19 @@
 /* eslint-disable jsx-a11y/alt-text */
 import './Cloth.css';
 import Carousel from 'react-material-ui-carousel';
-import { Paper } from '@mui/material';
+import { Button, Paper } from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
+import Popup from '../popup/Popup';
+import { useState } from 'react';
 
 const AllCloth = ({clothes}) => {
 
+    const [buttonPopup, setButtonPopup] = useState(false);
     const navigate = useNavigate();
     function reviews (clothId){
         navigate(`/Reviews/${clothId}`);
     }
-
+    
     var ads = [
         {
             id: 1,
@@ -29,8 +32,7 @@ const AllCloth = ({clothes}) => {
         }
 
 
-    ]
-
+    ]  
 
   return (
     <div className='cloth-carousel-container'>
@@ -44,7 +46,23 @@ const AllCloth = ({clothes}) => {
             </div>
             <div className="image-stack__item image-stack__item--top">
                 <h3 className="display-4 mb-8" color='black'>2023 Second-Hand Collection</h3>
-                <a className="btn btn-dark" href="#">What's New?</a>
+                <a className="btn btn-dark" onClick={() => setButtonPopup(true)}>What's New?</a>
+                
+                    <Popup trigger={buttonPopup} setTrigger = {setButtonPopup}>
+                    <div className='new-popup'>
+                        <div className='new-left'>
+                            <p className='new'>New Arrival</p>
+                            <h3>Check out our new collection!</h3>
+                            <p>If you like it, add to cart right now!</p>
+                            <Button variant="contained" color="success"> Add to cart</Button>
+                        </div>
+                        <div className='new-right'>
+                            <img src="https://sominchw.sirv.com/Images/Clothes/InShot_20230426_122144213.jpg" width="90%" height='300px'/>
+                        </div>
+                       
+                    </div>
+                    </Popup>
+                
                 <img src="https://sominchw.sirv.com/Images/Clothes/2hand.jpg" alt=""/>
             </div>
             </div>

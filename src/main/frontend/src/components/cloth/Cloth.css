@@ -4,6 +4,19 @@
    background-position: center;
 }
 
+.new-popup{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.new{
+   font-size: 40px;
+   font-weight: 800;
+   color: rgb(167, 137, 101);
+}
+
 
 .intro-container{
    height: 20%;
@@ -77,6 +90,14 @@ h2.card_title{
    font-size: 10px;
    display: inline-block;
    vertical-align: top;
+}
+
+.btn-addtocart{
+   position: absolute;
+   width:fit-content;
+   cursor: pointer;
+   font-weight: bolder;
+   color: rgb(129, 41, 41);
 }
 
 .card_header .btn{

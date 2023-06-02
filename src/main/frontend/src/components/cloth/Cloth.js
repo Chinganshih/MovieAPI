@@ -4,8 +4,6 @@ import { useEffect } from 'react'
 
 const Cloth = ( {getClothByCat, categoryId, clothes, getBanner, banner}) => {
 
-
-    
     useEffect(() => {
         getClothByCat(categoryId);
         getBanner(categoryId);

@@ -7,8 +7,14 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import { NavLink } from 'react-router-dom'
+import Popup from '../popup/Popup';
+import { useState } from 'react';
 
 const Header = () => {
+
+    
+  const [buttonPopup, setButtonPopup] = useState(false);
+
   return (
     <Navbar ng="dark" variant="dark" expand="lg">
         <Container fluid>
@@ -37,8 +43,11 @@ const Header = () => {
                 <NavLink className="nav-link" to= "/Other" style={{"color":"grey"}}>Other</NavLink>
                 <NavLink className="nav-link" to= "/ContactUs" style={{"color":"black"}}>Contact us</NavLink>
             </Nav>
-                <Button >Login</Button>
-                <Button >Register</Button>
+                <Button onClick={() => setButtonPopup(true)}>Login</Button>
+                <Button onClick={() => setButtonPopup(true)}>Register</Button>
+                <Popup trigger={buttonPopup} setTrigger = {setButtonPopup} height="100%">
+                   <p className='popup-txt'>Coming soon...working on it! Some problems exist...</p> 
+                </Popup>
             </Navbar.Collapse>
         </Container>
     </Navbar>
