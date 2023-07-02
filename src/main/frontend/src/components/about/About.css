@@ -4,9 +4,10 @@
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    color: rgb(10, 6, 6);
+    color: rgb(135, 59, 59);
     text-shadow: 2px 2px #663e10;
     font-weight: bolder;
+    margin-top: 25%;
 }
 
 .float-container {
@@ -37,7 +38,7 @@
 
 .submit{
     display: inline-block;
-    width: 30%;
+    width: 20%;
     height: 2rem;
     cursor: pointer;
     margin: 2vw;

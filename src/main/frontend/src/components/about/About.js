@@ -8,7 +8,7 @@ const About = () => {
         <div className="float-container">
 
         <div className="float-child">
-            <img src="https://sominchw.sirv.com/Images/Clothes/Contact-us.png" width="100%" height="100%" alt=""/>
+            <img src="https://sominchw.sirv.com/Images/Clothes/pexels-leticia-ribeiro-2112651.jpg" width="100%" height="100%" alt=""/>
         </div>
         
         <div className="float-child">
@@ -25,8 +25,8 @@ const About = () => {
               <input type="text" placeholder="416-854-1220" required></input>
 
               <label for="msg"> Message:</label>
-              <textarea>
-                Hello there, this is some text in a text area
+              <textarea placeholder='Hello there, this is some text in a text area'>
+                
               </textarea>
 
               <button className="submit" type='submit'>Submit</button>
