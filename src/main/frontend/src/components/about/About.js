@@ -3,16 +3,35 @@ import './About.css';
 const About = () => {
   return (
     <div className='about'>
-        <p>AnnaThriftShop - Second Chance Savings</p>
+        
 
         <div className="float-container">
 
         <div className="float-child">
-            <img src="https://sominchw.sirv.com/Images/Clothes/ad3.png" width="100%" height="100%" alt=""/>
+            <img src="https://sominchw.sirv.com/Images/Clothes/Contact-us.png" width="100%" height="100%" alt=""/>
         </div>
         
         <div className="float-child">
-            <div className="right">Thrifting is the practice of repurposing previously owned, upcycled, or thrift clothing and accessories. In other words, shopping for gently used items at a reduced price at a thrift store, garage sale, or flea market. Thrift stores are highly popular nowadays, both online and in traditional brick-and-mortar models.</div>
+          <form>
+            
+              <p>Contact Us</p>
+              <label for="username"> Username:</label>
+              <input type="text" placeholder="Anna" required></input>
+
+              <label for="email"> Email:</label>
+              <input type="text" placeholder="xxxx@gmail.com" required></input>
+
+              <label for="phone"> Phone:</label>
+              <input type="text" placeholder="416-854-1220" required></input>
+
+              <label for="msg"> Message:</label>
+              <textarea>
+                Hello there, this is some text in a text area
+              </textarea>
+
+              <button className="submit" type='submit'>Submit</button>
+          </form>
+            
         </div>
 
         </div>

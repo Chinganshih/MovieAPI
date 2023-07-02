@@ -1,24 +1,50 @@
+
 .about p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
+    font-size: 50px;
+    color: rgb(10, 6, 6);
     text-shadow: 2px 2px #663e10;
     font-weight: bolder;
 }
 
 .float-container {
     padding: 20px;
+    background-color: #bca182;
+    display: flex;
 }
 
 .float-child {
     width: 50%;
     float: left;
     padding: 20px;
+    background-color: rgb(225, 210, 191);
+    display: block;
+    
 }  
 
-.float-child .right{
-    font-size: 25px;
-    color:#663e10
+.float-child input, textarea{
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    margin: 0.9vw 0;
+    border: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    color:#291a0b
 }
+
+.submit{
+    display: inline-block;
+    width: 30%;
+    height: 2rem;
+    cursor: pointer;
+    margin: 2vw;
+    background-color: #b08b62;
+    color: white;
+    border: 0;
+    align-items: center;
+
+}
+

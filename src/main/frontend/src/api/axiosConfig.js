@@ -1,8 +1,8 @@
 import axios from "axios";
 
 export default axios.create({
-   baseURL:'https://chingan.info:8443',
-    // baseURL:'https://localhost:8443',
+//    baseURL:'https://chingan.info:8443',
+    baseURL:'https://localhost:8443',
     headers: {
         "Access-Control-Allow-Origin": "*",
         'Access-Control-Allow-Headers': '*',
