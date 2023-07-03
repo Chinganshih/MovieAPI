@@ -12,6 +12,8 @@ import Footer from './components/footer/Footer';
 import NotFound from './components/notFound/NotFound';
 import Coming from './components/notFound/Coming';
 import Cloth from './components/cloth/Cloth'
+import Contact from './components/contact/Contact'
+
 
 function App() {
 
@@ -90,7 +92,7 @@ function App() {
             <Route exact path="/Accessory" element={<Cloth getClothByCat = {getClothByCat} categoryId= {3} clothes = {clothByCat} getBanner = {getBanner} banner = {banner}/>}></Route>
             <Route exact path="/Shoes" element={<Cloth getClothByCat = {getClothByCat} categoryId= {4} clothes = {clothByCat} getBanner = {getBanner} banner = {banner}/>}></Route>
             <Route exact path="/Other" element={<Cloth getClothByCat = {getClothByCat} categoryId= {5} clothes = {clothByCat} getBanner = {getBanner} banner = {banner}/>}></Route>
-            <Route path="/ContactUs" element={<About/>}></Route>
+            <Route path="/ContactUs" element={<Contact/>}></Route>
             <Route path="*" element={<NotFound/>}> </Route>
           </Route>
 
