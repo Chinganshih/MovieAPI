@@ -3,7 +3,7 @@ import './About.css';
 const About = () => {
   return (
     <div className='about'>
-        <p>AnnaThriftShop - Second Chance Savings</p>
+        <p>Anna Thrift Shop - Second Chance Savings</p>
 
         <div className="float-container">
 

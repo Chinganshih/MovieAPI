@@ -10,7 +10,7 @@ import {
 const Footer = () => {
   return (
     <div className='footer'> 
-        <h3>chinganshih@gmail.com | 416-732-2043 | Toronto, Canada</h3>
+        <h3>thriftstore.tw@gmail.com | Toronto, Canada</h3>
         <div className="social-container">  
             <a href="https://www.facebook.com/"> <FontAwesomeIcon icon={faFacebook}/> </a>
             <a href="https://instagram.com/2clothes_an?igshid=ZGUzMzM3NWJiOQ=="> <FontAwesomeIcon icon={faInstagram}/> </a>
